@@ -3802,3 +3802,103 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
     margin-top: 3rem;
   }
 }
+
+/* Footer */
+#join_our_team {
+  color: #ffffff;
+  text-align: center;
+}
+#join_our_team .wrapper {
+  padding-bottom: 0;
+}
+#join_our_team h1, #join_our_team h2, #join_our_team h3, #join_our_team h4, #join_our_team h5 {
+  color: #ffffff;
+}
+#join_our_team input[type=text],
+#join_our_team input[type=password],
+#join_our_team input[type=email],
+#join_our_team input[type=tel],
+#join_our_team input[type=search],
+#join_our_team input[type=url],
+#join_our_team select,
+#join_our_team textarea {
+  color: #424242;
+}
+#join_our_team .copyright {
+  background: #05240f;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+}
+#join_our_team .content {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4rem 0 2rem 0;
+}
+#join_our_team .content .form {
+  background: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 15px 59px -20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 15px 59px -20px rgba(0, 0, 0, 0.35);
+  margin-right: 2rem;
+  padding: 2rem;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+#join_our_team .content .form > :last-child {
+  margin-bottom: 0;
+}
+#join_our_team .content .form form {
+  margin-bottom: 0;
+}
+#join_our_team .content .form form ul {
+  -moz-justify-content: -moz-flex-start;
+  -ms-justify-content: -ms-flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 980px) {
+  #join_our_team .content {
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  #join_our_team .content .form {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    width: 100%;
+  }
+  #join_our_team .content .form ul.actions {
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #join_our_team .content .icons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 980px) {
+  #join_our_team .copyright {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 736px) {
+  #join_our_team .copyright {
+    margin-top: 3rem;
+  }
+}
