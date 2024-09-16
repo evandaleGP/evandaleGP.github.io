@@ -88,10 +88,23 @@
 					margin-bottom: _size(element-margin);
 				}
 			}
+
+			.profile-two {
+				margin-bottom: _size(element-margin) * 2.5;
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: _size(element-margin);
+				}
+			}
 		}
 
 		@include breakpoint('<=small') {
 			.profile {
+				margin-bottom: _size(element-margin);
+			}
+
+			.profile-two {
 				margin-bottom: _size(element-margin);
 			}
 		}

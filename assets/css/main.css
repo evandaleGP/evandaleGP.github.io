@@ -2932,9 +2932,19 @@ table.alt tbody tr td {
   .profiles .profile:last-child {
     margin-bottom: 2rem;
   }
+  .profiles .profile-two {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  .profiles .profile-two:last-child {
+    margin-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 736px) {
   .profiles .profile {
+    margin-bottom: 2rem;
+  }
+  .profiles .profile-two {
     margin-bottom: 2rem;
   }
 }
