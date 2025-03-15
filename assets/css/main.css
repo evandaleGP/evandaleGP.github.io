@@ -99,6 +99,19 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   transition: none !important;
 }
 
+#floatingBookNow {
+  background: #003e85;
+  width: 200px;
+  background-position: top;
+  padding: 0px 30px 0px 30px;
+  margin: 10px 10px 10px 10px;
+  position: fixed;
+  bottom: 0px;
+  float: right;
+  right: 0;
+  z-index: 99999;
+}
+
 /* Typography */
 html {
   font-size: 15pt;
