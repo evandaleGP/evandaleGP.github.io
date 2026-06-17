@@ -358,7 +358,7 @@ a {
   color: #401353;
 }
 a:hover {
-  color: #601d7d;
+  color: rgb(96, 28.5, 124.5);
 }
 
 strong, b {
@@ -1913,13 +1913,6 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 400;
-  padding-left: 2.7rem;
-  padding-right: 0.75rem;
-  position: relative;
 }
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
@@ -1933,6 +1926,16 @@ input[type=radio] + label:before {
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+input[type=checkbox] + label,
+input[type=radio] + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 2.7rem;
+  padding-right: 0.75rem;
+  position: relative;
 }
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
@@ -2052,8 +2055,6 @@ input[type=radio]:focus + label:before {
 /* Icon */
 .icon {
   text-decoration: none;
-  border-bottom: none;
-  position: relative;
 }
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
@@ -2066,6 +2067,10 @@ input[type=radio]:focus + label:before {
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+.icon {
+  border-bottom: none;
+  position: relative;
 }
 .icon.solid:before {
   font-weight: 900;
@@ -2615,8 +2620,6 @@ table.alt tbody tr td {
           align-items: flex-start;
   background-color: #000000;
   color: #ffffff;
-  background: none;
-  margin-bottom: 2rem;
 }
 .spotlights input, .spotlights select, .spotlights textarea {
   color: #ffffff;
@@ -2785,6 +2788,10 @@ table.alt tbody tr td {
   color: #ffffff;
   border-color: #ffffff;
 }
+.spotlights {
+  background: none;
+  margin-bottom: 2rem;
+}
 .spotlights > div > :last-child {
   margin-bottom: 0;
 }
@@ -2880,7 +2887,7 @@ table.alt tbody tr td {
   margin-bottom: 2rem;
   padding: 3rem 2rem;
   position: relative;
-  width: 30%;
+  width: 48%;
 }
 .profiles .profile:before {
   background: #401353;
@@ -3070,7 +3077,7 @@ table.alt tbody tr td {
   color: #ffffff;
 }
 .dropotron {
-  background-color: #501868;
+  background-color: rgb(80, 23.75, 103.75);
   border-radius: 0.5rem;
   list-style-type: none;
   margin: -0.5rem 0 0 1px;
@@ -3084,7 +3091,7 @@ table.alt tbody tr td {
 .dropotron.level-0:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #501868;
+  background-color: rgb(80, 23.75, 103.75);
   content: "";
   height: 0.75rem;
   position: absolute;
@@ -3117,15 +3124,6 @@ table.alt tbody tr td {
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
   text-decoration: none;
-  color: #ffffff;
-  display: none;
-  height: inherit;
-  line-height: inherit;
-  outline: 0;
-  padding: 0 1rem;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 #header > .navPanelToggle:before {
   -moz-osx-font-smoothing: grayscale;
@@ -3138,6 +3136,17 @@ table.alt tbody tr td {
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+#header > .navPanelToggle {
+  color: #ffffff;
+  display: none;
+  height: inherit;
+  line-height: inherit;
+  outline: 0;
+  padding: 0 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #header > .navPanelToggle:hover {
   color: #ffffff;
@@ -3243,7 +3252,7 @@ table.alt tbody tr td {
   transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background-color: #501868;
+  background-color: rgb(80, 23.75, 103.75);
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
@@ -3290,6 +3299,20 @@ table.alt tbody tr td {
 }
 #navPanel .close {
   text-decoration: none;
+}
+#navPanel .close:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+#navPanel .close {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -3306,18 +3329,6 @@ table.alt tbody tr td {
   top: 0;
   vertical-align: middle;
   width: 7em;
-}
-#navPanel .close:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  text-transform: none !important;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 #navPanel .close:before {
   content: "\f00d";
@@ -3622,11 +3633,6 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
 #footer .content .icons {
   background-color: #000000;
   color: #ffffff;
-  background: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 40rem;
 }
 #footer .content .icons input, #footer .content .icons select, #footer .content .icons textarea {
   color: #ffffff;
@@ -3794,6 +3800,13 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
 #footer .content .icons ul.color-feature-icons li .icon {
   color: #ffffff;
   border-color: #ffffff;
+}
+#footer .content .icons {
+  background: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 40rem;
 }
 #footer .content .icons li {
   display: -moz-flex;
